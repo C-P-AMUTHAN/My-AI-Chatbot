@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: 'Kanit', cursive;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FAF6F0;
+}
+
+.disclaimer {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+.disclaimer h4{
+    height: 20%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4DFC8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.chatbot {
+    height: 90%;
+    width: 32%;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot .header {
+    height: 10%;
+    width: calc(100% - 2px);
+    display: flex;
+    background-color: #000000;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid black;
+}
+
+.chatbot .header .profile {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot .header .profile img {
+    height: 70%;
+    width: 50%;
+    border-radius: 50%;
+    border:2px solid white;
+}
+
+.chatbot .header .name {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: flex-start;
+}
+
+.chatbot .header .name span {
+    font-size: 20px;
+}
+
+.chatbot .chat-area {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+
+.chat-area::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.chat-area::-webkit-scrollbar-thumb {
+    background: #000; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round the edges of the scrollbar thumb */
+}
+
+.chat-area::-webkit-scrollbar-thumb:hover {
+    background: #000000; /* Color of the thumb on hover */
+}
+
+/* For Firefox */
+.chat-area {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: gray #f1f1f1; /* Thumb color and track color */
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 20px 0px 20px;
+}
+
+.message.user {
+    width: fit-content;
+    background-color: #F4DFC8;
+    color: #000000;
+    align-self: flex-end;
+    text-align: right;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.message.bot {
+    width: fit-content;
+    background-color: #F4EAE0;
+    color: #000000;
+    align-self: flex-start;
+    text-align: left;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.chatbot .footer {
+    height: auto;
+    width: calc(100% - 12px);
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.chatbot .footer .send a {
+    color: black;
+    position: relative; 
+    font-size: 25px;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAF6F0;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.chatbot .footer .input {
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot .footer .input textarea {
+    width: 90%;
+    font-size: 20px;
+    border-radius: 6px;
+    padding-left: 10px;
+    overflow-y: auto;
+    resize: none;
+    max-height: 100px; /* Limit the max height */
+    height: auto;
+    min-height: 35px;
+    line-height: 20px;
+    font-family: 'Kanit', cursive;
+}
+
+.chatbot .footer .input textarea::placeholder {
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Kanit', cursive;
+}
+
+.chatbot .footer .input textarea:focus {
+    outline: none;
+}
+
+.chatbot .footer .send {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:1400px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .disclaimer{
+        height: 20%;
+    }
+    .disclaimer h4{
+        height: 60%;
+    }
+    .chatbot {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .disclaimer h4 {
+        height: 60%;
+        width: 90%;
+    }
+    .chatbot {
+        height: 70%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .disclaimer h4{
+        font-size: 10px;
+    }
+    .chatbot .footer .send a{
+        padding: 3px;
+    }
+}

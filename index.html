@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="disclaimer">
+            <h4>This Chatbot can able to respond to some questions only, because it has been trained with small data. You can ask simple questions which is related to AMUTHAN education.</h4>
+        </div>
+        <div class="chatbot">
+            <div class="header">
+                <div class="profile">
+                    <img src="Images/AMUTHAN.jpg" alt="profile-image">
+                </div>
+                <div class="name">
+                    <span>AMUTHAN C P</span>
+                </div>
+            </div>
+            <div class="chat-area" id="chat-area">
+            </div>
+            <div class="footer" id="footer">
+                <div class="input">
+                    <textarea name="input" id="text-input" placeholder="Ask questions about me..."></textarea>
+                </div>
+                <div class="send" id="send-btn">
+                    <a href="#">
+                        <i class='bx bxs-send'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
