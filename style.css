@@ -211,6 +211,9 @@ body {
         width: 70%;
         height: 70%;
     }
+    .chatbot .footer .input textarea{
+        font-family:'Afacad Flux', sans-serif ;
+    }
 }
 
 @media screen and (max-width:900px) {
