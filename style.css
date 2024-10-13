@@ -37,18 +37,18 @@ body {
     height: 90%;
     width: 32%;
     background-color: white;
-    border-radius: 6px;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .chatbot .header {
     height: 10%;
-    width: calc(100% - 2px);
+    width: 100%;
     display: flex;
     background-color: #000000;
     border-radius: 10px 10px 0 0;
-    border: 1px solid black;
 }
 
 .chatbot .header .profile {
@@ -83,10 +83,9 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    width: calc(100% - 2px);
     overflow-y: auto;
+    width: 100%;
     padding-bottom: 10px;
-    border: 1px solid black;
 }
 
 .chat-area::-webkit-scrollbar-track {
@@ -133,13 +132,12 @@ body {
 
 .chatbot .footer {
     height: auto;
-    width: calc(100% - 12px);
+    width: calc(100% - 10px);
     background-color: #000000;
     display: flex;
     align-items: center;
     border-radius: 0 0 10px 10px;
     padding: 5px;
-    border: 1px solid black;
 }
 
 .chatbot .footer .send a {
