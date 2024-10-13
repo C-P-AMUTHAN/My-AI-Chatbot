@@ -83,6 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    width: calc(100% - 2px);
     overflow-y: auto;
     padding-bottom: 10px;
     border: 1px solid black;
