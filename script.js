@@ -37,7 +37,7 @@ function fetchWitAiResponse(message) {
 }
 
 const intentHandlers = {
-    'get_name': handleCSVIntent('Name', 'My name is'),
+    'get_name': handleCSVIntent('Name', 'I am'),
     'get_gmail': handleCSVIntent('Gmail ID', 'My Gmail ID is'),
     'get_phone': handleCSVIntent('Phone Number', 'My phone number is'),
     'get_school': handleCSVIntent('School', 'Here are the details of my school journey:'),
@@ -48,7 +48,7 @@ const intentHandlers = {
     'get_dob': handleCSVIntent('DOB', 'My date of birth is'),
     'get_learning': handleCSVIntent('Current Learning', 'I am currently learning'),
     'get_achievements': handleCSVIntent('Achievments', 'Some of my achievements are'),
-    'get_hobbies': handleCSVIntent('Hobbies', 'My hobbies include'),
+    'get_hobbies': handleCSVIntent('Hobbies', 'The hobbies include'),
     'get_goal': handleCSVIntent('Goal', 'My current goal is'),
     'get_habits': handleCSVIntent('Practising Habits', 'I follow these practising habits'),
     'get_food': handleCSVIntent('Food', 'My favorite foods are'),
@@ -57,7 +57,7 @@ const intentHandlers = {
     'get_father_name': handleCSVIntent('Father Name', 'My father\'s name is'),
     'get_mother_name': handleCSVIntent('Mother Name', 'My mother\'s name is'),
     'get_sister_name': handleCSVIntent('Sister Name', 'My sister\'s name is'),
-    'get_college': handleCSVIntent('College', 'I am currently studying at'),
+    'get_college': handleCSVIntent('College', 'I am currently studying in'),
     'get_12thmark': handleCSVIntent('12thMark', 'My 12th mark is'),
     'get_10thmark': handleCSVIntent('10thMark', 'My 10th mark is'),
 };
