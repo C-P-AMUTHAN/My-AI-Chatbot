@@ -214,6 +214,9 @@ body {
     .chatbot .footer .input textarea {
         font-family:'Afacad Flux', sans-serif ;
     }
+    .chatbot .footer .input textarea::placeholder{
+        font-family:'Afacad Flux', sans-serif ;
+    }
 }
 
 @media screen and (max-width:900px) {
